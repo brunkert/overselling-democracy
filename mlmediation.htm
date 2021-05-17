@@ -1,0 +1,1429 @@
+<html>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a:link
+{
+    color: black;
+    text-decoration: none;
+}
+a[name]:hover
+{
+    text-decoration: none;
+}
+a:hover
+{
+    color: blue;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+.heading
+{
+    color: black;
+    font-weight: bold;
+    font-size: 110%;
+}
+.heading:hover
+{
+    color: black;
+    font-weight: bold;
+    font-size: 110%;
+    text-decoration: none;
+}
+</style>
+
+<body style="font-family:'Courier New'; font-size:14px;">
+<p class="heading">
+Mplus VERSION 8.2<br />
+MUTHEN & MUTHEN<br />
+04/08/2021  12:20 PM<br />
+</p>
+
+<p class='heading'>OUTPUT SECTIONS</p>
+
+<ul>
+     <li><a href='#input'>Input Instructions</a></li>
+     <li><a href='#inputmessages'>Input Warnings and Errors</li>
+     <li></a></li>
+     <li><a href='#summary_analysis'>Summary Of Analysis</a></li>
+     <li><a href='#summary_data'>Summary Of Data</a></li>
+     <li><a href='#covariance_coverage'>Covariance Coverage Of Data</a></li>
+     <li><a href='#univariatess'>Univariate Sample Statistics</a></li>
+     <li><a href='#modelmessages'>Model Warnings and Errors</li>
+     <li></a></li>
+     <li><a href='#model_fit'>Model Fit Information</a></li>
+     <li><a href='#model_results'>Model Results</a></li>
+     <li><a href='#ci_results'>Confidence Intervals Of Model Results</a></li>
+     <li><a href='#tech1_output'>Technical 1 Output</a></li>
+     <li><a href='#tech8_output'>Technical 8 Output</a></li>
+</ul>
+</p>
+<pre>
+
+<a name='input' class='heading'>INPUT INSTRUCTIONS</a>
+
+  Title:
+    Stata2Mplus conversion for mlmediation.dta
+    List of variables converted shown below
+
+    S024 : Country - wave
+      126: Algeria (6)
+      316: Azerbaijan (6)
+      326: Argentina (6)
+      327: Argentina (7)
+      365: Australia (5)
+      366: Australia (6)
+      367: Australia (7)
+      507: Bangladesh (7)
+      516: Armenia (6)
+      687: Bolivia (7)
+      765: Brazil (5)
+      766: Brazil (6)
+      767: Brazil (7)
+      1005: Bulgaria (5)
+      1047: Myanmar (7)
+      1126: Belarus (6)
+      1245: Canada (5)
+      1525: Chile (5)
+      1526: Chile (6)
+      1527: Chile (7)
+      1565: China (5)
+      1566: China (6)
+      1567: China (7)
+      1706: Colombia (6)
+      1707: Colombia (7)
+      1965: Cyprus (5)
+      1966: Cyprus (6)
+      1967: Cyprus (7)
+      2186: Ecuador (6)
+      2187: Ecuador (7)
+      2315: Ethiopia (5)
+      2336: Estonia (6)
+      2465: Finland (5)
+      2505: France (5)
+      2685: Georgia (5)
+      2686: Georgia (6)
+      2765: Germany (5)
+      2766: Germany (6)
+      2767: Germany (7)
+      2885: Ghana (5)
+      2886: Ghana (6)
+      3007: Greece (7)
+      3326: Haiti (6)
+      3485: Hungary (5)
+      3565: India (5)
+      3566: India (6)
+      3605: Indonesia (5)
+      3607: Indonesia (7)
+      3645: Iran (5)
+      3686: Iraq (6)
+      3687: Iraq (7)
+      3925: Japan (5)
+      3926: Japan (6)
+      3927: Japan (7)
+      3986: Kazakhstan (6)
+      3987: Kazakhstan (7)
+      4005: Jordan (5)
+      4006: Jordan (6)
+      4007: Jordan (7)
+      4105: South Korea (5)
+      4106: South Korea (6)
+      4107: South Korea (7)
+      4176: Kyrgyzstan (6)
+      4226: Lebanon (6)
+      4227: Lebanon (7)
+      4346: Libya (6)
+      4585: Malaysia (5)
+      4586: Malaysia (6)
+      4587: Malaysia (7)
+      4665: Mali (5)
+      4845: Mexico (5)
+      4846: Mexico (6)
+      4847: Mexico (7)
+      4985: Moldova (5)
+      5045: Morocco (5)
+      5046: Morocco (6)
+      5285: Netherlands (5)
+      5286: Netherlands (6)
+      5546: New Zealand (6)
+      5587: Nicaragua(7)
+      5666: Nigeria (6)
+      5667: Nigeria (7)
+      5785: Norway (5)
+      5866: Pakistan (5)
+      5867: Pakistan (7)
+      6045: Peru (5)
+      6046: Peru (6)
+      6047: Peru (7)
+      6086: Philippines (6)
+      6087: Philippines (7)
+      6165: Poland (5)
+      6166: Poland (6)
+      6425: Romania (5)
+      6426: Romania (6)
+      6427: Romania (7)
+      6435: Russian Federation (5)
+      6436: Russian Federation (6)
+      6437: Russian Federation (7)
+      6466: Rwanda (6)
+      6885: Serbia (5)
+      7026: Singapore (6)
+      7045: Vietnam (5)
+      7047: Vietnam (7)
+      7055: Slovenia (5)
+      7056: Slovenia (6)
+      7105: South Africa (5)
+      7106: South Africa (6)
+      7166: Zimbabwe (6)
+      7167: Zimbabwe (7)
+      7245: Spain (5)
+      7246: Spain (6)
+      7525: Sweden (5)
+      7526: Sweden (6)
+      7565: Switzerland (5)
+      7627: Tajikistan (7)
+      7645: Thailand (5)
+      7646: Thailand (6)
+      7647: Thailand (7)
+      7805: Trinidad and Tobago (5)
+      7806: Trinidad and Tobago (6)
+      7886: Tunisia (6)
+      7887: Tunisia (7)
+      7925: Turkey (5)
+      7926: Turkey (6)
+      8045: Ukraine (5)
+      8046: Ukraine (6)
+      8265: United Kingdom (5)
+      8545: Burkina Faso (5)
+      8585: Uruguay (5)
+      8586: Uruguay (6)
+      8876: Yemen (6)
+      8945: Zambia (5)
+    democ_weight2 :
+    c_overselling_min_n : overselling_min_n (centered)
+    c_lnd_anti_and : lnd_anti_and (centered)
+    overselling_min_n :
+    lnd_anti_and :
+    c_education_n : education_n (centered)
+    c_incomescales_n : incomescales_n (centered)
+    c_pol_interest_n : pol_interest_n (centered)
+    c_trust_media_n : trust_media_n (centered)
+    c_financesatis_n : financesatis_n (centered)
+    c_evi_n : evi_n (centered)
+    c_age : Age (centered)
+    v2xnp_client_n :
+    regimeduration :
+    censorship_n :
+    PTS_S : PTS_S
+    evi_m :
+    loggdp :
+    libdem_stock45_log :
+    S002 : Wave
+      5: 2005-2009
+      6: 2010-2014
+      7: 2017-2019
+
+  Data:
+    File is mlmediation.dat ;
+  Variable:
+    Names are
+       S002 S024 v2xnp_client_n overselling_min_n libdem_stock45_log regimeduration
+       PTS_S loggdp democ_weight2 evi_m lnd_anti_and c_lnd_anti_and censorship_n
+       c_education_n c_incomescales_n c_pol_interest_n c_trust_media_n c_financesatis_n
+       c_evi_n c_age c_overselling_min_n;
+    Missing are all (-9999);
+    Usevariables are S024 democ_weight2 lnd_anti_and c_overselling_min_n c_education_n
+    c_incomescales_n c_pol_interest_n c_trust_media_n c_financesatis_n c_evi_n c_age
+    v2xnp_client_n libdem_stock45_log regimeduration PTS_S loggdp censorship_n evi_m;
+
+    Between is c_overselling_min_n v2xnp_client_n libdem_stock45_log regimeduration
+    PTS_S loggdp censorship_n evi_m;
+
+    Within is c_education_n c_incomescales_n c_pol_interest_n c_trust_media_n
+    c_financesatis_n c_evi_n c_age;
+
+    Cluster is S024;
+
+  Analysis:
+    Type = twolevel random ;
+
+  Model:
+  %WITHIN%
+      !estimate Level-1 (residual) variances for m and y
+          lnd_anti_and democ_weight2;
+      !regress y on m, call the slope "b"
+          democ_weight2 ON lnd_anti_and(b);
+      !add controls
+          democ_weight2 ON c_education_n c_incomescales_n
+          c_pol_interest_n c_trust_media_n c_financesatis_n c_evi_n c_age;
+      !add controls
+          lnd_anti_and ON c_education_n c_incomescales_n
+          c_pol_interest_n c_trust_media_n c_financesatis_n c_evi_n c_age;
+  %BETWEEN%
+      !estimate Level-2 (residual) variances for x, m, and y
+          democ_weight2 lnd_anti_and c_overselling_min_n;
+      !regress m on x, call the slope "a"
+          lnd_anti_and ON c_overselling_min_n(a);
+      !add controls
+          lnd_anti_and ON v2xnp_client_n libdem_stock45_log
+          regimeduration PTS_S loggdp censorship_n evi_m;
+      !regress y on m
+          democ_weight2 ON lnd_anti_and(b);
+      !add controls
+          democ_weight2 ON c_overselling_min_n v2xnp_client_n libdem_stock45_log
+          regimeduration PTS_S loggdp censorship_n evi_m;
+
+  MODEL CONSTRAINT: ! section for computing indirect effect
+          NEW(indb); ! name the indirect effect
+          indb=a*b; ! compute the Between indirect effect
+
+
+  OUTPUT: TECH1 TECH8 CINTERVAL; ! request parameter specifications, starting values,
+   ! optimization history, and confidence intervals for all effects
+
+
+<a name='inputmessages' class='heading'></a>
+
+*** WARNING in VARIABLE command
+  Note that only the first 8 characters of variable names are used in the output.
+  Shorten variable names to avoid any confusion.
+   1 WARNING(S) FOUND IN THE INPUT INSTRUCTIONS
+
+
+
+
+Stata2Mplus conversion for mlmediation.dta
+List of variables converted shown below
+
+S024 : Country - wave
+126: Algeria (6)
+316: Azerbaijan (6)
+326: Argentina (6)
+327: Argentina (7)
+365: Australia (5)
+366: Australia (6)
+367: Australia (7)
+507: Bangladesh (7)
+516: Armenia (6)
+687: Bolivia (7)
+765: Brazil (5)
+766: Brazil (6)
+767: Brazil (7)
+1005: Bulgaria (5)
+1047: Myanmar (7)
+1126: Belarus (6)
+1245: Canada (5)
+1525: Chile (5)
+1526: Chile (6)
+1527: Chile (7)
+1565: China (5)
+1566: China (6)
+1567: China (7)
+1706: Colombia (6)
+1707: Colombia (7)
+1965: Cyprus (5)
+1966: Cyprus (6)
+1967: Cyprus (7)
+2186: Ecuador (6)
+2187: Ecuador (7)
+2315: Ethiopia (5)
+2336: Estonia (6)
+2465: Finland (5)
+2505: France (5)
+2685: Georgia (5)
+2686: Georgia (6)
+2765: Germany (5)
+2766: Germany (6)
+2767: Germany (7)
+2885: Ghana (5)
+2886: Ghana (6)
+3007: Greece (7)
+3326: Haiti (6)
+3485: Hungary (5)
+3565: India (5)
+3566: India (6)
+3605: Indonesia (5)
+3607: Indonesia (7)
+3645: Iran (5)
+3686: Iraq (6)
+3687: Iraq (7)
+3925: Japan (5)
+3926: Japan (6)
+3927: Japan (7)
+3986: Kazakhstan (6)
+3987: Kazakhstan (7)
+4005: Jordan (5)
+4006: Jordan (6)
+4007: Jordan (7)
+4105: South Korea (5)
+4106: South Korea (6)
+4107: South Korea (7)
+4176: Kyrgyzstan (6)
+4226: Lebanon (6)
+4227: Lebanon (7)
+4346: Libya (6)
+4585: Malaysia (5)
+4586: Malaysia (6)
+4587: Malaysia (7)
+4665: Mali (5)
+4845: Mexico (5)
+4846: Mexico (6)
+4847: Mexico (7)
+4985: Moldova (5)
+5045: Morocco (5)
+5046: Morocco (6)
+5285: Netherlands (5)
+5286: Netherlands (6)
+5546: New Zealand (6)
+5587: Nicaragua(7)
+5666: Nigeria (6)
+5667: Nigeria (7)
+5785: Norway (5)
+5866: Pakistan (5)
+5867: Pakistan (7)
+6045: Peru (5)
+6046: Peru (6)
+6047: Peru (7)
+6086: Philippines (6)
+6087: Philippines (7)
+6165: Poland (5)
+6166: Poland (6)
+6425: Romania (5)
+6426: Romania (6)
+6427: Romania (7)
+6435: Russian Federation (5)
+6436: Russian Federation (6)
+6437: Russian Federation (7)
+6466: Rwanda (6)
+6885: Serbia (5)
+7026: Singapore (6)
+7045: Vietnam (5)
+7047: Vietnam (7)
+7055: Slovenia (5)
+7056: Slovenia (6)
+7105: South Africa (5)
+7106: South Africa (6)
+7166: Zimbabwe (6)
+7167: Zimbabwe (7)
+7245: Spain (5)
+7246: Spain (6)
+7525: Sweden (5)
+7526: Sweden (6)
+7565: Switzerland (5)
+7627: Tajikistan (7)
+7645: Thailand (5)
+7646: Thailand (6)
+7647: Thailand (7)
+7805: Trinidad and Tobago (5)
+7806: Trinidad and Tobago (6)
+7886: Tunisia (6)
+7887: Tunisia (7)
+7925: Turkey (5)
+
+<a name='summary_analysis' class='heading'>SUMMARY OF ANALYSIS</a>
+
+Number of groups                                                 1
+Number of observations                                      151519
+
+Number of dependent variables                                    2
+Number of independent variables                                 15
+Number of continuous latent variables                            0
+
+Observed dependent variables
+
+  Continuous
+   DEMOC_WEIG  LND_ANTI_A
+
+Observed independent variables
+   C_OVERSE    C_EDUCAT    C_INCOME    C_POL_IN    C_TRUST_    C_FINANC
+   C_EVI_N     C_AGE       V2XNP_CL    LIBDEM_S    REGIMEDU    PTS_S
+   LOGGDP      CENSORSH    EVI_M
+
+Variables with special functions
+
+  Cluster variable      S024
+
+  Within variables
+   C_EDUCAT    C_INCOME    C_POL_IN    C_TRUST_    C_FINANC    C_EVI_N
+   C_AGE
+
+  Between variables
+   C_OVERSE    V2XNP_CL    LIBDEM_S    REGIMEDU    PTS_S       LOGGDP
+   CENSORSH    EVI_M
+
+
+Estimator                                                      MLR
+Information matrix                                        OBSERVED
+Maximum number of iterations                                   100
+Convergence criterion                                    0.100D-05
+Maximum number of EM iterations                                500
+Convergence criteria for the EM algorithm
+  Loglikelihood change                                   0.100D-02
+  Relative loglikelihood change                          0.100D-05
+  Derivative                                             0.100D-03
+Minimum variance                                         0.100D-03
+Maximum number of steepest descent iterations                   20
+Maximum number of iterations for H1                           2000
+Convergence criterion for H1                             0.100D-03
+Optimization algorithm                                         EMA
+
+Input data file(s)
+  mlmediation.dat
+Input data format  FREE
+
+
+<a name='summary_data' class='heading'>SUMMARY OF DATA</a>
+
+     Number of missing data patterns             2
+     Number of clusters                        132
+
+     Average cluster size     1147.871
+
+     Estimated Intraclass Correlations for the Y Variables
+
+                Intraclass              Intraclass
+     Variable  Correlation   Variable  Correlation
+
+     DEMOC_WE     0.178      LND_ANTI     0.240
+
+
+
+<a name='covariance_coverage' class='heading'>COVARIANCE COVERAGE OF DATA</a>
+
+Minimum covariance coverage value   0.100
+
+
+     PROPORTION OF DATA PRESENT
+
+
+           Covariance Coverage
+              C_OVERSE      DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME
+              ________      ________      ________      ________      ________
+ C_OVERSE       1.000
+ DEMOC_WE       0.997         0.997
+ LND_ANTI       1.000         0.997         1.000
+ C_EDUCAT       1.000         0.997         1.000         1.000
+ C_INCOME       1.000         0.997         1.000         1.000         1.000
+ C_POL_IN       1.000         0.997         1.000         1.000         1.000
+ C_TRUST_       1.000         0.997         1.000         1.000         1.000
+ C_FINANC       1.000         0.997         1.000         1.000         1.000
+ C_EVI_N        1.000         0.997         1.000         1.000         1.000
+ C_AGE          1.000         0.997         1.000         1.000         1.000
+ V2XNP_CL       1.000         0.997         1.000         1.000         1.000
+ LIBDEM_S       1.000         0.997         1.000         1.000         1.000
+ REGIMEDU       1.000         0.997         1.000         1.000         1.000
+ PTS_S          1.000         0.997         1.000         1.000         1.000
+ LOGGDP         1.000         0.997         1.000         1.000         1.000
+ CENSORSH       1.000         0.997         1.000         1.000         1.000
+ EVI_M          1.000         0.997         1.000         1.000         1.000
+
+
+           Covariance Coverage
+              C_POL_IN      C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________      ________
+ C_POL_IN       1.000
+ C_TRUST_       1.000         1.000
+ C_FINANC       1.000         1.000         1.000
+ C_EVI_N        1.000         1.000         1.000         1.000
+ C_AGE          1.000         1.000         1.000         1.000         1.000
+ V2XNP_CL       1.000         1.000         1.000         1.000         1.000
+ LIBDEM_S       1.000         1.000         1.000         1.000         1.000
+ REGIMEDU       1.000         1.000         1.000         1.000         1.000
+ PTS_S          1.000         1.000         1.000         1.000         1.000
+ LOGGDP         1.000         1.000         1.000         1.000         1.000
+ CENSORSH       1.000         1.000         1.000         1.000         1.000
+ EVI_M          1.000         1.000         1.000         1.000         1.000
+
+
+           Covariance Coverage
+              V2XNP_CL      LIBDEM_S      REGIMEDU      PTS_S         LOGGDP
+              ________      ________      ________      ________      ________
+ V2XNP_CL       1.000
+ LIBDEM_S       1.000         1.000
+ REGIMEDU       1.000         1.000         1.000
+ PTS_S          1.000         1.000         1.000         1.000
+ LOGGDP         1.000         1.000         1.000         1.000         1.000
+ CENSORSH       1.000         1.000         1.000         1.000         1.000
+ EVI_M          1.000         1.000         1.000         1.000         1.000
+
+
+           Covariance Coverage
+              CENSORSH      EVI_M
+              ________      ________
+ CENSORSH       1.000
+ EVI_M          1.000         1.000
+
+
+
+<a name='univariatess' class='heading'>UNIVARIATE SAMPLE STATISTICS</a>
+
+
+     UNIVARIATE HIGHER-ORDER MOMENT DESCRIPTIVE STATISTICS
+
+         Variable/         Mean/     Skewness/   Minimum/ % with                Percentiles
+        Sample Size      Variance    Kurtosis    Maximum  Min/Max      20%/60%    40%/80%    Median
+
+     C_OVERSELLING_M      -0.018       0.029      -0.631    0.76%      -0.275     -0.117     -0.024
+             132.000       0.067      -0.924       0.587    0.76%       0.098      0.233
+     DEMOC_WEIGHT2         0.490       0.058       0.000    7.95%       0.198      0.432      0.494
+          151062.000       0.086      -0.934       1.000    9.01%       0.556      0.778
+     LND_ANTI_AND          0.338       0.033      -0.900    0.09%       0.000      0.200      0.300
+          151519.000       0.114      -0.695       1.000    0.10%       0.450      0.700
+     C_EDUCATION_N         0.000       0.049      -0.796    0.01%      -0.242     -0.074     -0.008
+          151519.000       0.076      -0.564       0.694    0.06%       0.065      0.253
+     C_INCOMESCALES_       0.000       0.095      -0.613    0.01%      -0.198     -0.054      0.005
+          151519.000       0.052      -0.232       0.817    0.00%       0.057      0.189
+     C_POL_INTEREST_       0.000      -0.080      -0.702    0.02%      -0.236     -0.078      0.001
+          151519.000       0.072      -0.618       0.692    0.01%       0.072      0.239
+     C_TRUST_MEDIA_N       0.000       0.041      -0.720    0.00%      -0.200     -0.065     -0.003
+          151519.000       0.058      -0.212       0.747    0.00%       0.058      0.209
+     C_FINANCESATIS_       0.000      -0.287      -0.745    0.01%      -0.214     -0.053      0.013
+          151519.000       0.065      -0.292       0.744    0.03%       0.086      0.217
+     C_EVI_N               0.000       0.102      -0.624    0.00%      -0.117     -0.038     -0.003
+          151519.000       0.019       0.082       0.655    0.00%       0.032      0.116
+     C_AGE                 0.000       0.399     -36.980    0.00%     -13.615     -5.824     -1.602
+          151519.000     227.020      -0.424      67.422    0.00%       2.777     13.511
+     V2XNP_CLIENT_N        0.387       0.074       0.002    0.76%       0.096      0.318      0.411
+             132.000       0.063      -1.178       0.880    0.76%       0.457      0.644
+     LIBDEM_STOCK45_       2.767      -0.304       0.759    0.76%       2.012      2.582      2.800
+             132.000       0.651      -0.490       4.185    0.76%       2.994      3.504
+     REGIMEDURATION       25.492       0.761       1.000    7.58%       6.000     16.000     20.000
+             132.000     394.144      -0.525      73.000    0.76%      26.000     45.000
+     PTS_S                 2.644       0.012       1.000   18.18%       2.000      2.000      3.000
+             132.000       1.199      -1.001       5.000    2.27%       3.000      4.000
+     LOGGDP               26.560      -0.071      23.377    0.76%      24.757     26.253     26.748
+             132.000       2.727      -0.719      30.621    0.76%      27.156     27.940
+     CENSORSHIP_N          0.633      -0.611       0.000    0.76%       0.343      0.604      0.682
+             132.000       0.072      -0.655       1.000    1.52%       0.744      0.892
+     EVI_M                 0.431       0.619       0.216    0.76%       0.338      0.397      0.410
+             132.000       0.013      -0.041       0.735    0.76%       0.440      0.522
+
+<a name='modelmessages' class='heading'></a>
+     THE STANDARD ERRORS OF THE MODEL PARAMETER ESTIMATES MAY NOT BE
+     TRUSTWORTHY FOR SOME PARAMETERS DUE TO A NON-POSITIVE DEFINITE
+     FIRST-ORDER DERIVATIVE PRODUCT MATRIX.  THIS MAY BE DUE TO THE STARTING
+     VALUES BUT MAY ALSO BE AN INDICATION OF MODEL NONIDENTIFICATION.  THE
+     CONDITION NUMBER IS       0.253D-11.  PROBLEM INVOLVING THE FOLLOWING PARAMETER:
+     Parameter 40, INDB
+
+
+THE MODEL ESTIMATION TERMINATED NORMALLY
+
+
+
+<a name='model_fit' class='heading'>MODEL FIT INFORMATION</a>
+
+Number of Free Parameters                       39
+
+Loglikelihood
+
+          H0 Value                      -36687.643
+          H0 Scaling Correction Factor      6.5088
+            for MLR
+          H1 Value                      -36596.838
+          H1 Scaling Correction Factor      5.5901
+            for MLR
+
+Information Criteria
+
+          Akaike (AIC)                   73453.287
+          Bayesian (BIC)                 73840.497
+          Sample-Size Adjusted BIC       73716.553
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit
+
+          Value                            163.397*
+          Degrees of Freedom                     8
+          P-Value                           0.0000
+          Scaling Correction Factor         1.1115
+            for MLR
+
+*   The chi-square value for MLM, MLMV, MLR, ULSMV, WLSM and WLSMV cannot be used
+    for chi-square difference testing in the regular way.  MLM, MLR and WLSM
+    chi-square difference testing is described on the Mplus website.  MLMV, WLSMV,
+    and ULSMV difference testing is done using the DIFFTEST option.
+
+RMSEA (Root Mean Square Error Of Approximation)
+
+          Estimate                           0.011
+
+CFI/TLI
+
+          CFI                                0.954
+          TLI                                0.776
+
+Chi-Square Test of Model Fit for the Baseline Model
+
+          Value                           3417.782
+          Degrees of Freedom                    39
+          P-Value                           0.0000
+
+SRMR (Standardized Root Mean Square Residual)
+
+          Value for Within                   0.000
+          Value for Between                  0.322
+
+
+
+<a name='model_results' class='heading'>MODEL RESULTS</a>
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+Within Level
+
+ DEMOC_WEIG ON
+    LND_ANTI_A         0.107      0.009     12.205      0.000
+    C_EDUCATIO        -0.005      0.006     -0.926      0.355
+    C_INCOMESC         0.044      0.010      4.437      0.000
+    C_POL_INTE        -0.067      0.007    -10.166      0.000
+    C_TRUST_ME         0.131      0.008     17.254      0.000
+    C_FINANCES         0.134      0.008     17.045      0.000
+    C_EVI_N           -0.059      0.012     -4.740      0.000
+    C_AGE              0.000      0.000      3.314      0.001
+
+ LND_ANTI_A ON
+    C_EDUCATIO         0.118      0.006     18.847      0.000
+    C_INCOMESC        -0.029      0.012     -2.522      0.012
+    C_POL_INTE        -0.030      0.008     -4.039      0.000
+    C_TRUST_ME        -0.047      0.007     -6.783      0.000
+    C_FINANCES        -0.006      0.008     -0.758      0.448
+    C_EVI_N            0.241      0.021     11.305      0.000
+    C_AGE              0.001      0.000      8.778      0.000
+
+ Residual Variances
+    DEMOC_WEIG         0.067      0.002     36.297      0.000
+    LND_ANTI_A         0.083      0.002     41.375      0.000
+
+Between Level
+
+ LND_ANTI_A ON
+    C_OVERSELL        -0.046      0.069     -0.670      0.503
+    V2XNP_CLIE        -0.135      0.048     -2.795      0.005
+    LIBDEM_STO        -0.078      0.020     -3.825      0.000
+    REGIMEDURA         0.001      0.001      1.520      0.128
+    PTS_S             -0.027      0.015     -1.724      0.085
+    LOGGDP             0.001      0.006      0.206      0.836
+    CENSORSHIP         0.216      0.048      4.496      0.000
+    EVI_M              0.556      0.131      4.254      0.000
+
+ DEMOC_WEIG ON
+    LND_ANTI_A         0.107      0.009     12.205      0.000
+    C_OVERSELL        -0.008      0.069     -0.111      0.911
+    V2XNP_CLIE        -0.098      0.081     -1.212      0.225
+    LIBDEM_STO         0.052      0.021      2.414      0.016
+    REGIMEDURA         0.001      0.001      1.781      0.075
+    PTS_S             -0.012      0.013     -0.989      0.323
+    LOGGDP             0.004      0.006      0.711      0.477
+    CENSORSHIP        -0.158      0.065     -2.417      0.016
+    EVI_M             -0.064      0.173     -0.369      0.712
+
+ Means
+    C_OVERSELL        -0.018      0.023     -0.785      0.433
+
+ Intercepts
+    DEMOC_WEIG         0.366      0.179      2.037      0.042
+    LND_ANTI_A         0.263      0.143      1.836      0.066
+
+ Variances
+    C_OVERSELL         0.067      0.006     11.076      0.000
+
+ Residual Variances
+    DEMOC_WEIG         0.011      0.002      7.153      0.000
+    LND_ANTI_A         0.009      0.002      5.843      0.000
+
+New/Additional Parameters
+    INDB              -0.005      0.008     -0.662      0.508
+
+
+QUALITY OF NUMERICAL RESULTS
+
+     Condition Number for the Information Matrix              0.253E-11
+       (ratio of smallest to largest eigenvalue)
+
+
+<a name='ci_results' class='heading'>CONFIDENCE INTERVALS OF MODEL RESULTS</a>
+
+                  Lower .5%  Lower 2.5%    Lower 5%    Estimate    Upper 5%  Upper 2.5%   Upper .5%
+
+Within Level
+
+ DEMOC_WE ON
+    LND_ANTI_A       0.085       0.090       0.093       0.107       0.122       0.125       0.130
+    C_EDUCATIO      -0.020      -0.017      -0.015      -0.005       0.004       0.006       0.010
+    C_INCOMESC       0.018       0.024       0.027       0.044       0.060       0.063       0.069
+    C_POL_INTE      -0.084      -0.080      -0.078      -0.067      -0.056      -0.054      -0.050
+    C_TRUST_ME       0.112       0.116       0.119       0.131       0.144       0.146       0.151
+    C_FINANCES       0.114       0.119       0.121       0.134       0.147       0.150       0.155
+    C_EVI_N         -0.091      -0.083      -0.079      -0.059      -0.038      -0.034      -0.027
+    C_AGE            0.000       0.000       0.000       0.000       0.001       0.001       0.001
+
+ LND_ANTI ON
+    C_EDUCATIO       0.102       0.105       0.107       0.118       0.128       0.130       0.134
+    C_INCOMESC      -0.059      -0.052      -0.048      -0.029      -0.010      -0.007       0.001
+    C_POL_INTE      -0.050      -0.045      -0.043      -0.030      -0.018      -0.016      -0.011
+    C_TRUST_ME      -0.065      -0.060      -0.058      -0.047      -0.036      -0.033      -0.029
+    C_FINANCES      -0.026      -0.021      -0.018      -0.006       0.007       0.009       0.014
+    C_EVI_N          0.186       0.199       0.206       0.241       0.276       0.283       0.296
+    C_AGE            0.001       0.001       0.001       0.001       0.001       0.001       0.001
+
+ Residual Variances
+    DEMOC_WEIG       0.062       0.063       0.064       0.067       0.070       0.070       0.071
+    LND_ANTI_A       0.078       0.079       0.080       0.083       0.086       0.087       0.088
+
+Between Level
+
+ LND_ANTI ON
+    C_OVERSELL      -0.224      -0.182      -0.160      -0.046       0.067       0.089       0.132
+    V2XNP_CLIE      -0.260      -0.230      -0.215      -0.135      -0.056      -0.040      -0.011
+    LIBDEM_STO      -0.131      -0.118      -0.112      -0.078      -0.045      -0.038      -0.026
+    REGIMEDURA      -0.001       0.000       0.000       0.001       0.002       0.002       0.002
+    PTS_S           -0.067      -0.057      -0.052      -0.027      -0.001       0.004       0.013
+    LOGGDP          -0.014      -0.010      -0.009       0.001       0.011       0.013       0.017
+    CENSORSHIP       0.092       0.122       0.137       0.216       0.295       0.311       0.340
+    EVI_M            0.219       0.300       0.341       0.556       0.770       0.811       0.892
+
+ DEMOC_WE ON
+    LND_ANTI_A       0.085       0.090       0.093       0.107       0.122       0.125       0.130
+    C_OVERSELL      -0.187      -0.144      -0.122      -0.008       0.107       0.128       0.171
+    V2XNP_CLIE      -0.306      -0.257      -0.231      -0.098       0.035       0.060       0.110
+    LIBDEM_STO      -0.003       0.010       0.016       0.052       0.087       0.094       0.107
+    REGIMEDURA       0.000       0.000       0.000       0.001       0.002       0.002       0.003
+    PTS_S           -0.045      -0.037      -0.033      -0.012       0.008       0.012       0.020
+    LOGGDP          -0.011      -0.007      -0.006       0.004       0.014       0.016       0.020
+    CENSORSHIP      -0.326      -0.286      -0.265      -0.158      -0.050      -0.030       0.010
+    EVI_M           -0.508      -0.402      -0.348      -0.064       0.220       0.274       0.381
+
+ Means
+    C_OVERSELL      -0.076      -0.062      -0.055      -0.018       0.019       0.027       0.040
+
+ Intercepts
+    DEMOC_WEIG      -0.097       0.014       0.070       0.366       0.661       0.717       0.828
+    LND_ANTI_A      -0.106      -0.018       0.027       0.263       0.498       0.544       0.632
+
+ Variances
+    C_OVERSELL       0.052       0.056       0.057       0.067       0.077       0.079       0.083
+
+ Residual Variances
+    DEMOC_WEIG       0.007       0.008       0.008       0.011       0.013       0.014       0.015
+    LND_ANTI_A       0.005       0.006       0.007       0.009       0.012       0.012       0.013
+
+New/Additional Parameters
+    INDB            -0.024      -0.020      -0.017      -0.005       0.007       0.010       0.014
+
+
+<a name='tech1_output' class='heading'>TECHNICAL 1 OUTPUT</a>
+
+
+     PARAMETER SPECIFICATION FOR WITHIN
+
+
+           NU
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+                    0             0             0             0             0
+
+
+           NU
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+                    0             0             0             0
+
+
+           LAMBDA
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+ DEMOC_WE           0             0             0             0             0
+ LND_ANTI           0             0             0             0             0
+ C_EDUCAT           0             0             0             0             0
+ C_INCOME           0             0             0             0             0
+ C_POL_IN           0             0             0             0             0
+ C_TRUST_           0             0             0             0             0
+ C_FINANC           0             0             0             0             0
+ C_EVI_N            0             0             0             0             0
+ C_AGE              0             0             0             0             0
+
+
+           LAMBDA
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+ DEMOC_WE           0             0             0             0
+ LND_ANTI           0             0             0             0
+ C_EDUCAT           0             0             0             0
+ C_INCOME           0             0             0             0
+ C_POL_IN           0             0             0             0
+ C_TRUST_           0             0             0             0
+ C_FINANC           0             0             0             0
+ C_EVI_N            0             0             0             0
+ C_AGE              0             0             0             0
+
+
+           THETA
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+ DEMOC_WE           0
+ LND_ANTI           0             0
+ C_EDUCAT           0             0             0
+ C_INCOME           0             0             0             0
+ C_POL_IN           0             0             0             0             0
+ C_TRUST_           0             0             0             0             0
+ C_FINANC           0             0             0             0             0
+ C_EVI_N            0             0             0             0             0
+ C_AGE              0             0             0             0             0
+
+
+           THETA
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+ C_TRUST_           0
+ C_FINANC           0             0
+ C_EVI_N            0             0             0
+ C_AGE              0             0             0             0
+
+
+           ALPHA
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+                    0             0             0             0             0
+
+
+           ALPHA
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+                    0             0             0             0
+
+
+           BETA
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+ DEMOC_WE           0             1             2             3             4
+ LND_ANTI           0             0             9            10            11
+ C_EDUCAT           0             0             0             0             0
+ C_INCOME           0             0             0             0             0
+ C_POL_IN           0             0             0             0             0
+ C_TRUST_           0             0             0             0             0
+ C_FINANC           0             0             0             0             0
+ C_EVI_N            0             0             0             0             0
+ C_AGE              0             0             0             0             0
+
+
+           BETA
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+ DEMOC_WE           5             6             7             8
+ LND_ANTI          12            13            14            15
+ C_EDUCAT           0             0             0             0
+ C_INCOME           0             0             0             0
+ C_POL_IN           0             0             0             0
+ C_TRUST_           0             0             0             0
+ C_FINANC           0             0             0             0
+ C_EVI_N            0             0             0             0
+ C_AGE              0             0             0             0
+
+
+           PSI
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+ DEMOC_WE          16
+ LND_ANTI           0            17
+ C_EDUCAT           0             0             0
+ C_INCOME           0             0             0             0
+ C_POL_IN           0             0             0             0             0
+ C_TRUST_           0             0             0             0             0
+ C_FINANC           0             0             0             0             0
+ C_EVI_N            0             0             0             0             0
+ C_AGE              0             0             0             0             0
+
+
+           PSI
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+ C_TRUST_           0
+ C_FINANC           0             0
+ C_EVI_N            0             0             0
+ C_AGE              0             0             0             0
+
+
+     PARAMETER SPECIFICATION FOR BETWEEN
+
+
+           NU
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+                    0             0             0             0             0
+
+
+           NU
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+                    0             0             0             0             0
+
+
+           LAMBDA
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+ C_OVERSE           0             0             0             0             0
+ DEMOC_WE           0             0             0             0             0
+ LND_ANTI           0             0             0             0             0
+ V2XNP_CL           0             0             0             0             0
+ LIBDEM_S           0             0             0             0             0
+ REGIMEDU           0             0             0             0             0
+ PTS_S              0             0             0             0             0
+ LOGGDP             0             0             0             0             0
+ CENSORSH           0             0             0             0             0
+ EVI_M              0             0             0             0             0
+
+
+           LAMBDA
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+ C_OVERSE           0             0             0             0             0
+ DEMOC_WE           0             0             0             0             0
+ LND_ANTI           0             0             0             0             0
+ V2XNP_CL           0             0             0             0             0
+ LIBDEM_S           0             0             0             0             0
+ REGIMEDU           0             0             0             0             0
+ PTS_S              0             0             0             0             0
+ LOGGDP             0             0             0             0             0
+ CENSORSH           0             0             0             0             0
+ EVI_M              0             0             0             0             0
+
+
+           THETA
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+ C_OVERSE           0
+ DEMOC_WE           0             0
+ LND_ANTI           0             0             0
+ V2XNP_CL           0             0             0             0
+ LIBDEM_S           0             0             0             0             0
+ REGIMEDU           0             0             0             0             0
+ PTS_S              0             0             0             0             0
+ LOGGDP             0             0             0             0             0
+ CENSORSH           0             0             0             0             0
+ EVI_M              0             0             0             0             0
+
+
+           THETA
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+ REGIMEDU           0
+ PTS_S              0             0
+ LOGGDP             0             0             0
+ CENSORSH           0             0             0             0
+ EVI_M              0             0             0             0             0
+
+
+           ALPHA
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+                   18            19            20             0             0
+
+
+           ALPHA
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+                    0             0             0             0             0
+
+
+           BETA
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+ C_OVERSE           0             0             0             0             0
+ DEMOC_WE          21             0             1            22            23
+ LND_ANTI          29             0             0            30            31
+ V2XNP_CL           0             0             0             0             0
+ LIBDEM_S           0             0             0             0             0
+ REGIMEDU           0             0             0             0             0
+ PTS_S              0             0             0             0             0
+ LOGGDP             0             0             0             0             0
+ CENSORSH           0             0             0             0             0
+ EVI_M              0             0             0             0             0
+
+
+           BETA
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+ C_OVERSE           0             0             0             0             0
+ DEMOC_WE          24            25            26            27            28
+ LND_ANTI          32            33            34            35            36
+ V2XNP_CL           0             0             0             0             0
+ LIBDEM_S           0             0             0             0             0
+ REGIMEDU           0             0             0             0             0
+ PTS_S              0             0             0             0             0
+ LOGGDP             0             0             0             0             0
+ CENSORSH           0             0             0             0             0
+ EVI_M              0             0             0             0             0
+
+
+           PSI
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+ C_OVERSE          37
+ DEMOC_WE           0            38
+ LND_ANTI           0             0            39
+ V2XNP_CL           0             0             0             0
+ LIBDEM_S           0             0             0             0             0
+ REGIMEDU           0             0             0             0             0
+ PTS_S              0             0             0             0             0
+ LOGGDP             0             0             0             0             0
+ CENSORSH           0             0             0             0             0
+ EVI_M              0             0             0             0             0
+
+
+           PSI
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+ REGIMEDU           0
+ PTS_S              0             0
+ LOGGDP             0             0             0
+ CENSORSH           0             0             0             0
+ EVI_M              0             0             0             0             0
+
+
+     PARAMETER SPECIFICATION FOR THE ADDITIONAL PARAMETERS
+
+
+           NEW/ADDITIONAL PARAMETERS
+              INDB
+              ________
+                   40
+
+
+     STARTING VALUES FOR WITHIN
+
+
+           NU
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+                0.000         0.000         0.000         0.000         0.000
+
+
+           NU
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+                0.000         0.000         0.000         0.000
+
+
+           LAMBDA
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+ DEMOC_WE       1.000         0.000         0.000         0.000         0.000
+ LND_ANTI       0.000         1.000         0.000         0.000         0.000
+ C_EDUCAT       0.000         0.000         1.000         0.000         0.000
+ C_INCOME       0.000         0.000         0.000         1.000         0.000
+ C_POL_IN       0.000         0.000         0.000         0.000         1.000
+ C_TRUST_       0.000         0.000         0.000         0.000         0.000
+ C_FINANC       0.000         0.000         0.000         0.000         0.000
+ C_EVI_N        0.000         0.000         0.000         0.000         0.000
+ C_AGE          0.000         0.000         0.000         0.000         0.000
+
+
+           LAMBDA
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+ DEMOC_WE       0.000         0.000         0.000         0.000
+ LND_ANTI       0.000         0.000         0.000         0.000
+ C_EDUCAT       0.000         0.000         0.000         0.000
+ C_INCOME       0.000         0.000         0.000         0.000
+ C_POL_IN       0.000         0.000         0.000         0.000
+ C_TRUST_       1.000         0.000         0.000         0.000
+ C_FINANC       0.000         1.000         0.000         0.000
+ C_EVI_N        0.000         0.000         1.000         0.000
+ C_AGE          0.000         0.000         0.000         1.000
+
+
+           THETA
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+ DEMOC_WE       0.000
+ LND_ANTI       0.000         0.000
+ C_EDUCAT       0.000         0.000         0.000
+ C_INCOME       0.000         0.000         0.000         0.000
+ C_POL_IN       0.000         0.000         0.000         0.000         0.000
+ C_TRUST_       0.000         0.000         0.000         0.000         0.000
+ C_FINANC       0.000         0.000         0.000         0.000         0.000
+ C_EVI_N        0.000         0.000         0.000         0.000         0.000
+ C_AGE          0.000         0.000         0.000         0.000         0.000
+
+
+           THETA
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+ C_TRUST_       0.000
+ C_FINANC       0.000         0.000
+ C_EVI_N        0.000         0.000         0.000
+ C_AGE          0.000         0.000         0.000         0.000
+
+
+           ALPHA
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+                0.000         0.000         0.000         0.000         0.000
+
+
+           ALPHA
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+                0.000         0.000         0.000         0.000
+
+
+           BETA
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+ DEMOC_WE       0.000         0.000         0.000         0.000         0.000
+ LND_ANTI       0.000         0.000         0.000         0.000         0.000
+ C_EDUCAT       0.000         0.000         0.000         0.000         0.000
+ C_INCOME       0.000         0.000         0.000         0.000         0.000
+ C_POL_IN       0.000         0.000         0.000         0.000         0.000
+ C_TRUST_       0.000         0.000         0.000         0.000         0.000
+ C_FINANC       0.000         0.000         0.000         0.000         0.000
+ C_EVI_N        0.000         0.000         0.000         0.000         0.000
+ C_AGE          0.000         0.000         0.000         0.000         0.000
+
+
+           BETA
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+ DEMOC_WE       0.000         0.000         0.000         0.000
+ LND_ANTI       0.000         0.000         0.000         0.000
+ C_EDUCAT       0.000         0.000         0.000         0.000
+ C_INCOME       0.000         0.000         0.000         0.000
+ C_POL_IN       0.000         0.000         0.000         0.000
+ C_TRUST_       0.000         0.000         0.000         0.000
+ C_FINANC       0.000         0.000         0.000         0.000
+ C_EVI_N        0.000         0.000         0.000         0.000
+ C_AGE          0.000         0.000         0.000         0.000
+
+
+           PSI
+              DEMOC_WE      LND_ANTI      C_EDUCAT      C_INCOME      C_POL_IN
+              ________      ________      ________      ________      ________
+ DEMOC_WE       0.043
+ LND_ANTI       0.000         0.057
+ C_EDUCAT       0.000         0.000         0.038
+ C_INCOME       0.000         0.000         0.000         0.026
+ C_POL_IN       0.000         0.000         0.000         0.000         0.036
+ C_TRUST_       0.000         0.000         0.000         0.000         0.000
+ C_FINANC       0.000         0.000         0.000         0.000         0.000
+ C_EVI_N        0.000         0.000         0.000         0.000         0.000
+ C_AGE          0.000         0.000         0.000         0.000         0.000
+
+
+           PSI
+              C_TRUST_      C_FINANC      C_EVI_N       C_AGE
+              ________      ________      ________      ________
+ C_TRUST_       0.029
+ C_FINANC       0.000         0.033
+ C_EVI_N        0.000         0.000         0.010
+ C_AGE          0.000         0.000         0.000       113.510
+
+
+     STARTING VALUES FOR BETWEEN
+
+
+           NU
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+                0.000         0.000         0.000         0.000         0.000
+
+
+           NU
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+                0.000         0.000         0.000         0.000         0.000
+
+
+           LAMBDA
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+ C_OVERSE       1.000         0.000         0.000         0.000         0.000
+ DEMOC_WE       0.000         1.000         0.000         0.000         0.000
+ LND_ANTI       0.000         0.000         1.000         0.000         0.000
+ V2XNP_CL       0.000         0.000         0.000         1.000         0.000
+ LIBDEM_S       0.000         0.000         0.000         0.000         1.000
+ REGIMEDU       0.000         0.000         0.000         0.000         0.000
+ PTS_S          0.000         0.000         0.000         0.000         0.000
+ LOGGDP         0.000         0.000         0.000         0.000         0.000
+ CENSORSH       0.000         0.000         0.000         0.000         0.000
+ EVI_M          0.000         0.000         0.000         0.000         0.000
+
+
+           LAMBDA
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+ C_OVERSE       0.000         0.000         0.000         0.000         0.000
+ DEMOC_WE       0.000         0.000         0.000         0.000         0.000
+ LND_ANTI       0.000         0.000         0.000         0.000         0.000
+ V2XNP_CL       0.000         0.000         0.000         0.000         0.000
+ LIBDEM_S       0.000         0.000         0.000         0.000         0.000
+ REGIMEDU       1.000         0.000         0.000         0.000         0.000
+ PTS_S          0.000         1.000         0.000         0.000         0.000
+ LOGGDP         0.000         0.000         1.000         0.000         0.000
+ CENSORSH       0.000         0.000         0.000         1.000         0.000
+ EVI_M          0.000         0.000         0.000         0.000         1.000
+
+
+           THETA
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+ C_OVERSE       0.000
+ DEMOC_WE       0.000         0.000
+ LND_ANTI       0.000         0.000         0.000
+ V2XNP_CL       0.000         0.000         0.000         0.000
+ LIBDEM_S       0.000         0.000         0.000         0.000         0.000
+ REGIMEDU       0.000         0.000         0.000         0.000         0.000
+ PTS_S          0.000         0.000         0.000         0.000         0.000
+ LOGGDP         0.000         0.000         0.000         0.000         0.000
+ CENSORSH       0.000         0.000         0.000         0.000         0.000
+ EVI_M          0.000         0.000         0.000         0.000         0.000
+
+
+           THETA
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+ REGIMEDU       0.000
+ PTS_S          0.000         0.000
+ LOGGDP         0.000         0.000         0.000
+ CENSORSH       0.000         0.000         0.000         0.000
+ EVI_M          0.000         0.000         0.000         0.000         0.000
+
+
+           ALPHA
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+                0.000         0.490         0.338         0.000         0.000
+
+
+           ALPHA
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+                0.000         0.000         0.000         0.000         0.000
+
+
+           BETA
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+ C_OVERSE       0.000         0.000         0.000         0.000         0.000
+ DEMOC_WE       0.000         0.000         0.000         0.000         0.000
+ LND_ANTI       0.000         0.000         0.000         0.000         0.000
+ V2XNP_CL       0.000         0.000         0.000         0.000         0.000
+ LIBDEM_S       0.000         0.000         0.000         0.000         0.000
+ REGIMEDU       0.000         0.000         0.000         0.000         0.000
+ PTS_S          0.000         0.000         0.000         0.000         0.000
+ LOGGDP         0.000         0.000         0.000         0.000         0.000
+ CENSORSH       0.000         0.000         0.000         0.000         0.000
+ EVI_M          0.000         0.000         0.000         0.000         0.000
+
+
+           BETA
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+ C_OVERSE       0.000         0.000         0.000         0.000         0.000
+ DEMOC_WE       0.000         0.000         0.000         0.000         0.000
+ LND_ANTI       0.000         0.000         0.000         0.000         0.000
+ V2XNP_CL       0.000         0.000         0.000         0.000         0.000
+ LIBDEM_S       0.000         0.000         0.000         0.000         0.000
+ REGIMEDU       0.000         0.000         0.000         0.000         0.000
+ PTS_S          0.000         0.000         0.000         0.000         0.000
+ LOGGDP         0.000         0.000         0.000         0.000         0.000
+ CENSORSH       0.000         0.000         0.000         0.000         0.000
+ EVI_M          0.000         0.000         0.000         0.000         0.000
+
+
+           PSI
+              C_OVERSE      DEMOC_WE      LND_ANTI      V2XNP_CL      LIBDEM_S
+              ________      ________      ________      ________      ________
+ C_OVERSE       0.033
+ DEMOC_WE       0.000         0.043
+ LND_ANTI       0.000         0.000         0.057
+ V2XNP_CL       0.000         0.000         0.000         0.031
+ LIBDEM_S       0.000         0.000         0.000         0.000         0.310
+ REGIMEDU       0.000         0.000         0.000         0.000         0.000
+ PTS_S          0.000         0.000         0.000         0.000         0.000
+ LOGGDP         0.000         0.000         0.000         0.000         0.000
+ CENSORSH       0.000         0.000         0.000         0.000         0.000
+ EVI_M          0.000         0.000         0.000         0.000         0.000
+
+
+           PSI
+              REGIMEDU      PTS_S         LOGGDP        CENSORSH      EVI_M
+              ________      ________      ________      ________      ________
+ REGIMEDU     188.166
+ PTS_S          0.000         0.616
+ LOGGDP         0.000         0.000         1.412
+ CENSORSH       0.000         0.000         0.000         0.037
+ EVI_M          0.000         0.000         0.000         0.000         0.006
+
+
+     STARTING VALUES FOR THE ADDITIONAL PARAMETERS
+
+
+           NEW/ADDITIONAL PARAMETERS
+              INDB
+              ________
+                0.500
+
+
+<a name='tech8_output' class='heading'>TECHNICAL 8 OUTPUT</a>
+
+
+   E STEP  ITER  LOGLIKELIHOOD    ABS CHANGE   REL CHANGE  ALGORITHM
+              1 -0.62290739D+05    0.0000000    0.0000000  EM
+              2 -0.36687765D+05 ************    0.4110238  EM
+              3 -0.36687643D+05    0.1220370    0.0000033  EM
+              4 -0.36687643D+05    0.0000034    0.0000000  EM
+
+
+   TECHNICAL 8 OUTPUT FOR THE H1 MODEL
+
+
+   E STEP  ITER  LOGLIKELIHOOD    ABS CHANGE   REL CHANGE  ALGORITHM
+              1 -0.72108968D+05    0.0000000    0.0000000  EM
+              2 -0.36596910D+05 ************    0.4924777  EM
+              3 -0.36596838D+05    0.0722961    0.0000020  EM
+              4 -0.36596838D+05    0.0000011    0.0000000  EM
+
+
+   TECHNICAL 8 OUTPUT FOR THE BASELINE MODEL
+
+
+   E STEP  ITER  LOGLIKELIHOOD    ABS CHANGE   REL CHANGE  ALGORITHM
+              1 -0.43783445D+05    0.0000000    0.0000000  EM
+              2 -0.43783445D+05    0.0000690    0.0000000  EM
+
+
+DIAGRAM INFORMATION
+
+  Mplus diagrams are currently not available for multilevel analysis.
+  No diagram output was produced.
+
+
+     Beginning Time:  12:20:15
+        Ending Time:  12:20:25
+       Elapsed Time:  00:00:10
+
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2018 Muthen & Muthen
+</pre>
+</div>
+</body>
+</html>

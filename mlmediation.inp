@@ -1,0 +1,218 @@
+Title: 
+  Stata2Mplus conversion for mlmediation.dta
+  List of variables converted shown below
+
+  S024 : Country - wave
+    126: Algeria (6)
+    316: Azerbaijan (6)
+    326: Argentina (6)
+    327: Argentina (7)
+    365: Australia (5)
+    366: Australia (6)
+    367: Australia (7)
+    507: Bangladesh (7)
+    516: Armenia (6)
+    687: Bolivia (7)
+    765: Brazil (5)
+    766: Brazil (6)
+    767: Brazil (7)
+    1005: Bulgaria (5)
+    1047: Myanmar (7)
+    1126: Belarus (6)
+    1245: Canada (5)
+    1525: Chile (5)
+    1526: Chile (6)
+    1527: Chile (7)
+    1565: China (5)
+    1566: China (6)
+    1567: China (7)
+    1706: Colombia (6)
+    1707: Colombia (7)
+    1965: Cyprus (5)
+    1966: Cyprus (6)
+    1967: Cyprus (7)
+    2186: Ecuador (6)
+    2187: Ecuador (7)
+    2315: Ethiopia (5)
+    2336: Estonia (6)
+    2465: Finland (5)
+    2505: France (5)
+    2685: Georgia (5)
+    2686: Georgia (6)
+    2765: Germany (5)
+    2766: Germany (6)
+    2767: Germany (7)
+    2885: Ghana (5)
+    2886: Ghana (6)
+    3007: Greece (7)
+    3326: Haiti (6)
+    3485: Hungary (5)
+    3565: India (5)
+    3566: India (6)
+    3605: Indonesia (5)
+    3607: Indonesia (7)
+    3645: Iran (5)
+    3686: Iraq (6)
+    3687: Iraq (7)
+    3925: Japan (5)
+    3926: Japan (6)
+    3927: Japan (7)
+    3986: Kazakhstan (6)
+    3987: Kazakhstan (7)
+    4005: Jordan (5)
+    4006: Jordan (6)
+    4007: Jordan (7)
+    4105: South Korea (5)
+    4106: South Korea (6)
+    4107: South Korea (7)
+    4176: Kyrgyzstan (6)
+    4226: Lebanon (6)
+    4227: Lebanon (7)
+    4346: Libya (6)
+    4585: Malaysia (5)
+    4586: Malaysia (6)
+    4587: Malaysia (7)
+    4665: Mali (5)
+    4845: Mexico (5)
+    4846: Mexico (6)
+    4847: Mexico (7)
+    4985: Moldova (5)
+    5045: Morocco (5)
+    5046: Morocco (6)
+    5285: Netherlands (5)
+    5286: Netherlands (6)
+    5546: New Zealand (6)
+    5587: Nicaragua(7)
+    5666: Nigeria (6)
+    5667: Nigeria (7)
+    5785: Norway (5)
+    5866: Pakistan (5)
+    5867: Pakistan (7)
+    6045: Peru (5)
+    6046: Peru (6)
+    6047: Peru (7)
+    6086: Philippines (6)
+    6087: Philippines (7)
+    6165: Poland (5)
+    6166: Poland (6)
+    6425: Romania (5)
+    6426: Romania (6)
+    6427: Romania (7)
+    6435: Russian Federation (5)
+    6436: Russian Federation (6)
+    6437: Russian Federation (7)
+    6466: Rwanda (6)
+    6885: Serbia (5)
+    7026: Singapore (6)
+    7045: Vietnam (5)
+    7047: Vietnam (7)
+    7055: Slovenia (5)
+    7056: Slovenia (6)
+    7105: South Africa (5)
+    7106: South Africa (6)
+    7166: Zimbabwe (6)
+    7167: Zimbabwe (7)
+    7245: Spain (5)
+    7246: Spain (6)
+    7525: Sweden (5)
+    7526: Sweden (6)
+    7565: Switzerland (5)
+    7627: Tajikistan (7)
+    7645: Thailand (5)
+    7646: Thailand (6)
+    7647: Thailand (7)
+    7805: Trinidad and Tobago (5)
+    7806: Trinidad and Tobago (6)
+    7886: Tunisia (6)
+    7887: Tunisia (7)
+    7925: Turkey (5)
+    7926: Turkey (6)
+    8045: Ukraine (5)
+    8046: Ukraine (6)
+    8265: United Kingdom (5)
+    8545: Burkina Faso (5)
+    8585: Uruguay (5)
+    8586: Uruguay (6)
+    8876: Yemen (6)
+    8945: Zambia (5)
+  democ_weight2 : 
+  c_overselling_min_n : overselling_min_n (centered)
+  c_lnd_anti_and : lnd_anti_and (centered)
+  overselling_min_n : 
+  lnd_anti_and : 
+  c_education_n : education_n (centered)
+  c_incomescales_n : incomescales_n (centered)
+  c_pol_interest_n : pol_interest_n (centered)
+  c_trust_media_n : trust_media_n (centered)
+  c_financesatis_n : financesatis_n (centered)
+  c_evi_n : evi_n (centered)
+  c_age : Age (centered)
+  v2xnp_client_n : 
+  regimeduration : 
+  censorship_n : 
+  PTS_S : PTS_S
+  evi_m : 
+  loggdp : 
+  libdem_stock45_log : 
+  S002 : Wave
+    5: 2005-2009
+    6: 2010-2014
+    7: 2017-2019
+ 
+Data:
+  File is mlmediation.dat ;
+Variable:
+  Names are 
+     S002 S024 v2xnp_client_n overselling_min_n libdem_stock45_log regimeduration
+     PTS_S loggdp democ_weight2 evi_m lnd_anti_and c_lnd_anti_and censorship_n
+     c_education_n c_incomescales_n c_pol_interest_n c_trust_media_n c_financesatis_n
+     c_evi_n c_age c_overselling_min_n;
+  Missing are all (-9999); 
+  Usevariables are S024 democ_weight2 lnd_anti_and c_overselling_min_n c_education_n 
+  c_incomescales_n c_pol_interest_n c_trust_media_n c_financesatis_n c_evi_n c_age
+  v2xnp_client_n libdem_stock45_log regimeduration PTS_S loggdp censorship_n evi_m;
+  
+  Between is c_overselling_min_n v2xnp_client_n libdem_stock45_log regimeduration
+  PTS_S loggdp censorship_n evi_m;
+  
+  Within is c_education_n c_incomescales_n c_pol_interest_n c_trust_media_n 
+  c_financesatis_n c_evi_n c_age;
+  
+  Cluster is S024;
+
+Analysis: 
+  Type = twolevel random ;
+
+Model:
+%WITHIN% 
+    !estimate Level-1 (residual) variances for m and y
+        lnd_anti_and democ_weight2; 
+    !regress y on m, call the slope "b"
+        democ_weight2 ON lnd_anti_and(b);
+    !add controls 
+        democ_weight2 ON c_education_n c_incomescales_n 
+        c_pol_interest_n c_trust_media_n c_financesatis_n c_evi_n c_age;
+    !add controls    
+        lnd_anti_and ON c_education_n c_incomescales_n 
+        c_pol_interest_n c_trust_media_n c_financesatis_n c_evi_n c_age;
+%BETWEEN% 
+    !estimate Level-2 (residual) variances for x, m, and y
+        democ_weight2 lnd_anti_and c_overselling_min_n; 
+    !regress m on x, call the slope "a"
+        lnd_anti_and ON c_overselling_min_n(a); 
+    !add controls
+        lnd_anti_and ON v2xnp_client_n libdem_stock45_log 
+        regimeduration PTS_S loggdp censorship_n evi_m; 
+    !regress y on m
+        democ_weight2 ON lnd_anti_and(b); 
+    !add controls
+        democ_weight2 ON c_overselling_min_n v2xnp_client_n libdem_stock45_log 
+        regimeduration PTS_S loggdp censorship_n evi_m; 
+
+MODEL CONSTRAINT: ! section for computing indirect effect
+        NEW(indb); ! name the indirect effect
+        indb=a*b; ! compute the Between indirect effect
+
+
+OUTPUT: TECH1 TECH8 CINTERVAL; ! request parameter specifications, starting values,
+ ! optimization history, and confidence intervals for all effects 
